@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body class="welcomepage">
+
+        <!--Navbar-->
+    <nav>
+        <div class="left">
+            <a href="college.html">
+                <img src="/Photos/logo.webp">
+            </a>
+        </div>
+
+        <div class="right">
+
+            <a href="aboutus.html">
+                <i class="fa-solid fa-globe"></i>
+                <span>About UCconnect</span>
+            </a>
+
+            <a href="joinus.html">
+                <i class="fa-solid fa-people-arrows"></i>
+                <span>Join Us</span>
+            </a>
+
+            <a href="login.html">
+                <i class="fa-solid fa-user"></i>
+                <span id="userDisplay"></span>
+            </a>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <!--colleges-->
+
+    <section id="loggedin" class="college-details">
+
+        <div class="cell">
+            <img src="Photos/tempCECH.webp">
+            <h1>The College of Education, Criminal Justice Human Services and IT (CECH)</h1>
+            <span>The projects highlighted in this section represent a broad and evolving spectrum of technology-driven disciplines—including Information Technology, Cybersecurity, Software Engineering, Data Analytics, and more. Housed within the College of Education, Criminal Justice, and Human Services (CECH), this platform is more than just a showcase—it's a launchpad for innovation, collaboration, and interdisciplinary problem-solving.
+                <br><br>CECH is uniquely positioned at the intersection of education, justice, and technology, offering a supportive ecosystem where students from a wide variety of majors come together to explore real-world challenges and cutting-edge solutions. Whether you're developing a secure network infrastructure, creating an app to support social good, or diving into the ethical implications of emerging tech, CECH provides the tools, mentorship, and community to help ideas come to life.
+                Here, innovation isn’t limited by discipline—it’s driven by the diversity of thought, background, and ambition that each student brings to the table.
+                <br>Click below to explore more of the project featured in this campus
+            </span>
+            <br>
+            <button onclick="window.location.href='Socialmedia.html'">Explore More</button>
+
+
+
+        </div>
+
+
+
+        <div class="cell">
+            <img src="Photos/tempCEAS.webp">
+            <h1>The College of Engineering and Applied Science (CEAS)</h1>
+            <span>The CEAS campus is a powerhouse of innovation, engineering excellence, and forward-thinking technology. Projects emerging from this space span a wide range of disciplines, including Mechanical, Electrical, and Computer Engineering, Civil Infrastructure, Artificial Intelligence, Robotics, and more. From hands-on prototyping to advanced simulations and research, CEAS is where theory meets real-world application.
+                <br><br>As one of the most dynamic colleges at the University of Cincinnati, CEAS brings together future engineers, developers, and problem-solvers who are passionate about pushing boundaries and solving global challenges. Students have access to state-of-the-art labs, collaborative makerspaces, and a network of mentors and industry partners that encourage exploration beyond the classroom.
+                Whether you're building smart cities, optimizing energy systems, designing next-gen hardware, or writing the code that powers tomorrow, CEAS provides the environment, tools, and inspiration to turn your ideas into impactful solutions. It's a space where technical talent meets limitless ambition—and where the next generation of engineers rise.
+            </span>
+            <br>
+            <button onclick="window.location.href='Socialmedia.html'">Explore More</button>
+
+
+        </div>
+
+
+        <div class="cell">
+            <img src="Photos/tempLinder.webp">
+            <h1>Linder College of Business</h1>
+            <span>The Lindner College of Business is where innovation, strategy, and entrepreneurship converge to shape the future of business. Projects showcased here reflect a wide range of disciplines—from Marketing, Finance, Accounting, and Business Analytics to cutting-edge topics like FinTech, Supply Chain Management, and Digital Strategy. At Lindner, students don't just study business—they live it through real-world case studies, startup incubation, consulting challenges, and data-driven decision-making.
+                <br><br>With a strong emphasis on experiential learning, Lindner empowers students to take initiative, lead teams, and bring ideas to market. Whether you're developing a business model for a startup, analyzing financial trends, or building marketing campaigns with real-world impact, the Lindner environment supports bold thinking and strategic execution.
+                Surrounded by forward-thinking faculty, collaborative peers, and strong ties to industry leaders, Lindner students are equipped to lead in today’s competitive global economy. This is a space where business meets creativity, data meets action, and students transform into future-ready professionals.
+            </span>
+            <br>
+            <button onclick="window.location.href='Socialmedia.html'">Explore More</button>
+
+
+        </div>
+
+
+        <div class="cell">
+            <img src="Photos/tempDAAP.webp">
+            <h1>The College of Design, Architecture, Art, and Planning (DAAP)</h1>
+            <span>The College of Design, Architecture, Art, and Planning (DAAP) is a creative powerhouse where imagination meets innovation, and design becomes a tool for shaping the world. Projects from DAAP span across Architecture, Industrial Design, Fine Arts, Graphic Communication, Fashion Design, Urban Planning, and more—each rooted in a deep commitment to aesthetics, function, and impact.
+                <br><br>DAAP students are not just artists or designers—they are visionary problem-solvers who craft experiences, environments, and solutions that challenge convention and inspire change. With access to cutting-edge studios, fabrication labs, and interdisciplinary collaboration, students bring ideas to life through sketching, prototyping, digital design, and immersive installations.
+                Whether you’re designing sustainable buildings, curating visual identities, reimagining urban spaces, or creating thought-provoking art, DAAP provides the environment and mentorship to push creative boundaries. It’s a space where bold ideas take form, and where creativity is not just expressed—but applied to the world around us.
+            </span>
+            <br>
+            <button onclick="window.location.href='Socialmedia.html'">Explore More</button>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!--Use details for college-->
+
+
+
+
+
+
+
+    <script>
+        // Grab the saved username
+        const username = localStorage.getItem("loggedInUser");
+
+        // Find the element that says "Guest"
+        const userDisplay = document.getElementById("userDisplay");
+
+        // Replace it with the actual username
+        if (username && userDisplay) {
+        userDisplay.textContent = username;
+        }
+    </script>
+    
+</body>
+</html>

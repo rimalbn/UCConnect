@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCconnect- briding the communication gap</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+    <!--CSS-->
+    
+
+    <style>
+
+
+
+
+
+
+    body{
+        display: flex;
+        font-family:'poppins', sans-serif;
+        background-color: var (--background-color);
+        text-decoration: none;
+        max-width: 1400px;
+    }
+
+    .left-pannel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 240px;
+        height: 730px;
+        border: 5px solid black;
+        margin: 20px;
+        border-radius: 12px;
+    }
+    
+
+    .left-pannel .cells a{
+        display: flex;
+        gap: 5px;
+        border: 2px solid red;
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: var(--background-color);
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+
+
+    .left-pannel .cells a:hover{
+        background-color: black;
+        color: white;
+        transition: .3s;
+    }
+
+
+
+
+
+    .left-pannel .profile-info{
+        margin-top: 220px;
+    }
+
+
+
+
+    .left-pannel .profile-info .infos{
+        display: flex;
+        gap: 10px;
+        background-color: var(--background-color);
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 60px;
+        border-radius: 10px;
+        border: 2px solid black;
+        margin-top: 60px;
+        background-color: red;
+    }
+
+    .left-pannel .profile-info :hover{
+        background-color: black;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+
+
+    .left-pannel .profile-info .infos span{
+        color: white;
+        font-size: 18px;
+    }
+
+    .left-pannel .profile-info .infos a{
+        color: white;
+    }
+
+
+    .left-pannel .logo-sm img{
+        width: 120px;
+    }
+
+
+    /*Main Feed*/
+
+    .main-feed{
+        background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        align-items: center;
+    }
+
+    .main-feed .titletext{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        
+    }
+
+    .main-feed form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-feed form button{
+        height: 50px;
+        font-size: 18px;
+        font-family: 'poppins', sans-serif;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        border-radius: 16px;
+    }
+
+    .main-feed form button:hover{
+        background-color: black;
+    }
+
+    .main-feed form textarea{
+        font-family: 'poppins', sans-serif;
+        padding: 10px;
+        margin-top: 10px;
+        width: 700px;
+        resize: none;
+        border-radius: 12px;
+        border: 2px solid blue;
+        height: 150px;
+    }
+
+
+
+
+
+
+    /*Posts*/
+    .main-feed .main-posts{
+        margin-top: 30px;
+        margin: 50px;
+    }
+    .post-buttons {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .post-buttons button {
+        padding: 5px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background-color: red;
+        color: white;
+    }
+
+    .post-buttons button:hover {
+        background-color: black;
+    }
+
+
+
+
+
+
+    /*Right Side*/
+    .right-pannel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 320px;
+        height: 730px;
+        border: 5px solid black;
+        margin: 20px;
+        border-radius: 12px;
+    }
+
+
+    /*Search Bar*/
+    .search-container {
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #fff;
+        margin-top: 10px;
+    }
+
+    .search-container input[type="text"] {
+        padding: 10px;
+        border: none;
+        outline: none;
+        width: 190px;
+        user-select: none;
+    }
+
+    .search-container button {
+        padding: 10px 15px;
+        border: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .search-container button:hover {
+        background-color: black;
+    }
+
+    .right-pannel .tags{
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .right-pannel .tags h2{
+        font-size: 18px;
+    }
+    
+    .right-pannel .tags p{
+        font-size: 14px;
+    }
+
+
+
+
+
+
+    /*Promotional*/
+
+    .self-promotion{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 250px;
+        margin-top: 80px;
+        background-color: var(--background-color);
+        border-radius: 12px;
+        padding: 12px;
+        user-select: none;
+    }
+
+    .self-promotion .promo-links{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .self-promotion .promo-links a{
+        color: white;
+        border: 1px solid;
+        width: 130px;
+        background-color: red;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .self-promotion .promo-links a:hover{
+        background-color: black;
+    }
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+
+
+
+<body id="socialmedia">
+
+
+    <!--Left Cointainer-->
+
+
+    <section id="left-side" class="left-pannel">
+    <!--Logo-->
+    <div class="logo-sm">
+        <img src="Photos/logo.webp">
+    </div>
+
+    <!--Home-->
+        <div class="cells">
+            <a href="Socialmedia.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Homepage</span>
+            </a>
+        </div>
+
+
+    <!--Bookmarked Posts-->
+
+        <div class="cells">
+            <a href="bookmarks.html">
+                <i class="fa-solid fa-bookmark"></i>
+                <span>Bookmarks</span>
+            </a>
+        </div>
+
+    <!--Following-->
+
+        <div class="cells">
+            <a href="following.html">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Following</span>
+            </a>
+        </div>
+
+    <!--Messages-->
+
+        <div class="cells">
+            <a href="messages.html">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Messages</span>
+            </a>
+        </div>
+
+    <!--Profile-->
+        <div class="profile-info">
+        <div class="infos">
+            <a href="profile.html">
+                <i class="fa-solid fa-circle-user"></i>
+                <span id="userDisplay"></span>
+            </a>
+        </div>  
+        </div>
+
+    </div>
+    </section>
+
+
+
+
+
+
+
+    <!--Main feed-->
+
+    <!--Top side- College Name-->
+    <section id="feedbox" class="main-feed">
+        
+
+        <div class="titletext">
+            <h1>The feed of CECH college</h1>
+            <p1><i>Checkout the latest conversatation going around this campus.</i></p1>
+        </div>
+
+        <form>
+            <label for="message"></label>
+            <textarea id="Message" cols="30" rows="10" placeholder="Create a post for everyone on this channel to view!"></textarea>
+
+            <button type="submit">Post</button>
+        </form>
+
+        <div class="main-posts">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>Posts from the department</span>
+        </div>
+
+
+    </section>
+    <!--Posting Options-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Right Section-->
+    <section id="right-side" class="right-pannel">
+
+
+        <!--Search navigation bar-->
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+
+
+        <!--Tags???-->
+        <div class="tags">
+            <h2>Keywords, you might be interested!</h2>
+            <p>Cybersecurity, Information Technology, Information Security, Web Development, System Administration
+                Computer Networking, Database Management System, Cyber Laws and Ethics, Computer Server, Object Oriented Programming
+                Computing Programming, Game Development, Software and Hardware Management, IT Infrastructure.
+            </p>
+        </div>
+
+
+        <!--Shameless Promotion of Myself-->
+        <div class="self-promotion">
+            <h2>Connect with UCconnect Team</h2>
+            <div class="promo-links">
+
+                <a href="https://www.linkedin.com/in/bipran/">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/rimalbn">
+                    <i class="fa-solid fa-code-compare"></i>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="mailto:bipran.workspace@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Mail me</span>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+<script>
+  const username = localStorage.getItem("loggedInUser") || "Guest";
+  const userDisplay = document.getElementById("userDisplay");
+  if (userDisplay) userDisplay.textContent = username;
+
+  const form = document.querySelector("form");
+  const messageInput = document.getElementById("Message");
+  const postsContainer = document.querySelector(".main-posts");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const content = messageInput.value.trim();
+    if (!content) return alert("Post can't be empty!");
+
+    const post = document.createElement("div");
+    post.classList.add("post");
+    post.style.marginTop = "20px";
+    post.style.padding = "15px";
+    post.style.border = "1px solid #ccc";
+    post.style.borderRadius = "10px";
+    post.style.background = "#fff";
+
+    post.innerHTML = `
+      <p><strong>${username}</strong></p>
+      <p>${content}</p>
+      <div class="post-buttons">
+        <button onclick="likePost(this)">❤️ Like (<span>0</span>)</button>
+        <button onclick="bookmarkPost(this)">⭐ Bookmark</button>
+      </div>
+    `;
+    postsContainer.appendChild(post);
+    messageInput.value = "";
+  });
+
+  function likePost(btn) {
+    const span = btn.querySelector("span");
+    span.textContent = parseInt(span.textContent) + 1;
+  }
+
+  function bookmarkPost(btn) {
+    const post = btn.closest(".post");
+    const clone = post.cloneNode(true);
+    clone.querySelector(".post-buttons").remove();
+    alert("Post bookmarked! (You can expand this to save in localStorage)");
+    // For real use, you'd append it to a bookmark section or save it in localStorage
+  }
+</script>
+
+</body>
+</html>

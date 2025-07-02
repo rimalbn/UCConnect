@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        body{
+            font-family: 'poppins', sans-serif;
+            background-image: url(Photos/UniversityPic.webp);
+            background-color: black;
+            color: white;
+        }
+
+        .contact-section .group .text{
+            color: white;
+        }
+
+        .contact-section .group{
+            color: black;
+        }
+
+        .contact-section .group .signup-logo img{
+            border-radius: 50px;
+        }
+
+    </style>
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body class="create-profile">
+
+        <!--Section4 Contact!-->
+        <section id="contact" class="contact-section">
+            <h2>Create your profile</h2>
+
+            <div class="group">
+                <div class="text">
+                    First step of creating your profile is to fill in the required details below
+                </div>
+
+                <div id="signup-logo">
+                    <img src="/Photos/logo.webp">
+                </div>
+
+                <form>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">UC Mail</label>
+                    <input type="email" id="email">
+
+                    <label for ="major"> Choose your major</label>
+                    <input type="text" id="major">
+
+                    <label for ="year">Which year are you in?</label>
+                    <input type="text" id="year">
+
+                    <div id="form-headshot">
+                        <label for="form-headshot">Upload your image<br></label>
+                        <input type="image" id="form-headshot">
+                    </div>
+
+
+                    <div id="warn">
+                        <label for="warning"> By checking this box you acknowledge that you created a public profile
+                            and you will be responsible for your actions on this platform and UCconnect team can terminate your 
+                            account in case of any malicious intent being discovered.
+                        </label>
+                        <input type="checkbox" id="warning">
+                    </div>
+
+
+                    <button type="submit">Create your profile</button>
+                </form>
+            </div>
+        </section>
+    
+</body>
+</html>

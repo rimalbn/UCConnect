@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body class="login">
+
+
+    <section id="loginpage" class="loginbox">
+        <div class="group">
+
+        <h1>Enter your credential to Login here</h1>
+        <img src="Photos/university_of_cincinnati-logo.webp">
+
+            <form onsubmit="return validateLogin(event)">
+                <label for="name">Username</label>
+                <input type="text" id="username" placeholder="UC username">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+
+                  <p id="error-msg" style="color: red;"></p>
+
+
+                <button type="submit">Login</button>
+            </form>
+
+
+            <span>If you need help for login or forgot your password contact these info<br>
+            rimalbn@mail.uc.edu
+            <br>Call: 513-400-0607
+            </span>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+<script>
+  function validateLogin(event) {
+    event.preventDefault(); // Prevent form from actually submitting
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const errorMsg = document.getElementById('error-msg');
+
+    // Add desired credentials here
+    const users=[
+        {username: "rimalbn", password: "CONFIRM@69420$lol"},
+        {username: "risalaa", password: "Anil@123"},
+        {username: "mandalpa", password: "Greatamericans69"}
+    ]
+    
+    const isValid = users.some(user => user.username === username && user.password === password);
+    if (isValid) {
+
+        localStorage.setItem("loggedInUser", username);
+      // ✅ Redirect to another page
+      window.location.href = "college.html"; 
+    } else {
+      // ❌ Show error
+      errorMsg.textContent = "Invalid username or password.";
+    }
+
+    return false; // Prevent actual form submission
+  }
+
+
+
+</script>
+
+</body>
+</html>

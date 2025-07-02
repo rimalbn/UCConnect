@@ -1,0 +1,688 @@
+        :root{
+            --text-color: #1a1c20;
+            --link-color: #4a76ee;
+            --background-color: #eeeff1;
+        }
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body.homepage{
+            font-family:'poppins', sans-serif;
+            background-color: var (--background-color);
+            text-decoration: none;
+            max-width: 1400px;
+        }
+        a{
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+
+        /*NavBar*/
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            height: 80px;
+            align-items: center;
+        }
+
+        nav .left img{
+            width: 100px;
+            margin-top: 40px;
+        }
+
+        nav .right a{
+            color: var(--text-color);
+            margin: 0 12px;
+        }
+
+        nav .right a:last-child{
+            color: var(--background-color);
+            background-color:red;
+            padding: 5px 15px;
+            border-radius: 7px;
+        }
+
+        nav .right a:last-child:hover{
+            background-color: black;
+        }
+
+        nav .right a span{
+            margin-left: 5px;
+        }
+
+
+
+        /*Explore*/
+
+        .explore{
+            width: 50%;
+            height: 90%;
+            background-color: orangered;
+            padding: 30px 35px;
+            margin-left: 25px;
+            margin-right: 0px;
+            border-radius: 10px;
+            display: inline-block;
+
+        }
+
+        .explore h1{
+            color: white;
+            margin-top: 20px;
+            font-size: 45px;
+        }
+
+        .explore p{
+            margin-top: 40px;
+            margin-bottom: 180px;
+        }
+
+        .explore span{
+            color: white;
+            font-size: 25px;
+            background-color:red;
+            padding: 10px 25px;
+            border-radius: 7px;
+        }
+
+        .explore  span:hover{
+            background-color: black;
+            color: white;
+        }
+
+
+
+
+        /*CollegeSection*/
+
+
+        .college-section{
+            width: 23%;
+            height: 130%;
+            background-color: rgb(0, 0, 0);
+            padding: 30px 35px;
+            margin-left: 10px;
+            margin-right: 5px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+
+        .college-section img{
+            width: 250px;
+            margin: 0px;
+        }
+
+
+        .college-section span{
+            color: white;
+            width: 200px;
+            font-size: 16px;
+        }
+
+
+
+        /*Trending Projects*/
+
+        .trending-projects{
+            width: 23%;
+            height: 120%;
+            margin-top: 1px;
+            margin-right: 0px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+
+        .trending-projects img{
+            width: 100px;
+        }
+
+        .trending-projects .cells .cell{
+            justify-content: center;
+            align-items: center;
+            border: 1.5px solid #d3d3d3;
+            border-radius: 5px;
+            padding: 4px;
+            margin: 3px;
+        }
+
+        .trending-projects .cells .cell img{
+            border-radius: 5px;
+            margin: 4px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*LOGIN PAGE*/
+
+
+
+        /*Just a basic background*/
+
+        body.login{
+            font-family:'poppins', sans-serif;
+            background-image: url(Photos/UniversityPic.webp);
+            text-decoration: none;
+            max-width: 1400px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: black;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*login box*/
+
+
+
+        .loginbox{
+            color: white;
+            width: 40%;
+            height: 50%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            margin-left:31%;
+            margin-top:8%;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+
+
+        .loginbox img{
+            width: 80px;
+            margin: 20px;
+        }
+
+
+
+        .loginbox .group form{
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+
+
+        .loginbox .group form textarea{
+            font-family: 'poppins', sans-serif;
+            border: 10px solid var(--link-color);
+            background-color: transparent;
+            padding: 30px;
+            margin-bottom: 15px;
+            outline: none;
+            resize: none;
+        }
+
+
+
+        .loginbox .group form button{
+            font-size: 16px;
+            font-family: 'poppins', sans-serif;
+            color: #fff;
+            background-color: red;
+            border: none;
+            height: 50px;
+            cursor: pointer;
+            transition: 0.1s;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .loginbox .group form input[type="text"],
+        .loginbox .group form input[type="email"],
+        .loginbox .group form input[type="password"] {
+            font-family: 'poppins', sans-serif;
+            border: 2px solid var(--link-color);
+            background-color: white;
+            padding: 10px;
+            font-size: 16px;
+            color: black;
+            border-radius: 10px;
+            outline: none;
+        }
+
+
+
+        .loginbox .group form button:hover{
+            filter: brightness(.8);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*WELCOME PAGE AFTER LOGIN*/
+
+
+
+
+
+
+
+        body.welcomepage{
+            font-family:'poppins', sans-serif;
+            background-color: var (--background-color);
+            text-decoration: none;
+            max-width: 1400px;
+        }
+
+
+        .login-college{
+            width: 23%;
+            height: 130%;
+            background-color: rgb(0, 0, 0);
+            padding: 30px 30px;
+            margin-left: 30px;
+            margin-top: 25px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+
+        .login-college img{
+            width: 250px;
+            margin: 10px;
+        }
+
+
+        .login-college span{
+            color: white;
+            width: 200px;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*College.html (College Details)*/
+
+
+
+
+
+
+
+
+
+
+
+        .college-details{
+            background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+            margin-top: 25px;
+            margin-left: 20px;
+            border-radius: 20px;
+        }
+
+
+        .college-details img{
+            width: 900px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        .college-details h1{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .college-details .cell button {
+            background-color: #c00;     /* Red */
+            color: white;               /* Text color */
+            padding: 10px 20px;         /* Space inside button */
+            border: none;               /* No border */
+            border-radius: 8px;         /* Rounded corners */
+            font-size: 16px;            /* Text size */
+            cursor: pointer;            /* Hand cursor on hover */
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .cell button:hover {
+        background-color: rgb(0, 0, 0);     /* Darker red when hovered */
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*ABOUTUS.HTML*/
+
+
+
+
+
+        body.aboutus{
+            font-family:'poppins', sans-serif;
+            background-color: var (--background-color);
+            text-decoration: none;
+            max-width: 1400px;
+        }
+
+        .main-class{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 50px;
+            margin: 50px 0;
+            align-items: center;
+            gap: 40px;
+            width: 99%;
+            background-color: var(--background-color);
+            border-radius: 30px;
+            margin-left: 20px;
+            
+        }
+
+        .main-class .text{
+            flex: 5;
+        }
+
+        .main-class .text .links{
+            margin-top: 25px;
+            user-select: none;
+            margin-bottom: 20px;
+        }
+
+        .main-class .links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 2px solid var(--link-color, #007bff);
+            border-radius: 8px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: var(--text-color, black);
+            transition: 0.2s ease-in-out;
+            font-weight: 500;
+        }
+
+            .main-class .links a:hover {
+                color: white;
+                background-color: var(--link-color, #007bff);
+                border-color: transparent;
+                cursor: pointer;
+            }
+
+            .main-class .text h1{
+                font-size: 45px;
+                margin-bottom: 10px;
+                margin-top: 15px;
+            }
+
+            .main-class .headshot{
+                display: flex;
+                justify-content: right;
+                flex: 2;
+                margin-bottom: 250px;
+            }
+
+            .main-class .headshot img{
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                width: 300px;
+                object-fit: cover;
+            }
+
+
+
+
+
+
+
+
+
+
+
+    /*JOINUS.HTML*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*forms*/
+
+body.joinus{
+    font-family:'poppins', sans-serif;
+    background-color: var (--background-color);
+    text-decoration: none;
+    max-width: 1400px;
+}
+
+.contact-section{
+padding: 0 50px;
+margin-bottom: 50px;
+margin-top: 20px;
+}
+
+.contact-section h2{
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.contact-section .group{
+    gap: 50px;
+}
+
+.contact-section .group .text{
+    flex: 3;
+    margin: 10px;
+}
+
+.contact-section .group #signup-logo img{
+    width: 200px;
+    padding: 10px;
+}
+
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    width: 45%;
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+
+.contact-section .group .form input,
+.contact-section .group form textarea{
+    font-family: 'poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+    height: 20px;
+}
+
+
+.contact-section .group form #checkbox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.contact-section .group form #form-resume{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.contact-section .group form #warn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-section .group form button{
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+    background-color: red;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.1s;
+    border-radius: 10px;
+}
+
+.contact-section .group form button:hover{
+    transition: 0.1s;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Create Profile*/
+
+
+
+
+
+
+
+
+
+

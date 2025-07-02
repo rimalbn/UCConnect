@@ -1,0 +1,114 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+    <body class="aboutus">
+        
+
+        <!--Navbar-->
+        <nav>
+            <div class="left">
+                <a href="index.html">
+                    <img src="/Photos/logo.webp">
+                </a>
+            </div>
+
+            <div class="right">
+
+                <a href="aboutus.html">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>About UCconnect</span>
+                </a>
+
+                <a href="joinus.html">
+                    <i class="fa-solid fa-people-arrows"></i>
+                    <span>Join Us</span>
+                </a>
+
+                <a href="login.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span id="userDisplay"></span>
+                </a>
+            </div>
+        </nav>
+
+
+<main>
+
+    <!--What is UC connect??-->
+
+
+    <section class="main-class">
+        <div class="text">
+            <h1>What is UCconnect</h1>
+            <p>UCConnect is a student-led initiative proudly developed by Bipran Rimal, a cybersecurity major at the University of Cincinnati. What started as a small project driven by curiosity and passion is now growing into a platform with a powerful mission—to bridge the communication gap between students from different majors across the university.
+                <br><br>At its core, UCConnect is designed to promote collaboration beyond departmental boundaries. In many universities, students with innovative ideas often struggle to find the right team—whether it’s a business student looking for a programmer or an engineer in need of a marketing strategist. UCConnect aims to solve that disconnect by creating an inclusive digital space where all students—regardless of their college or specialization—can discover, collaborate, and build together.
+                <br><br>For example, take Aaresh Maharjan, a driven student from the Lindner College of Business who is working on launching a startup. While he may have the entrepreneurial vision, he needs skilled programmers to bring his idea to life. Using UCConnect, Aaresh can easily post an opportunity in the CECH (College of Education, Criminal Justice, and Human Services) feed—where tech-savvy students actively browse and seek project involvement. The same applies across all UC colleges—CEAS, DAAP, Lindner, and more—each student can reach out beyond their department and build diverse teams with real potential.
+                <br><br>This platform fosters not only startup culture but also peer-to-peer innovation, encouraging students to step outside their bubbles and engage with minds they would never otherwise meet. Whether you're an artist looking for a coder, an engineer in need of a UX designer, or a marketer looking to test ideas, UCConnect opens the door to those connections.
+                Our hope is that UCConnect becomes a launchpad for creativity, a hub for interdisciplinary teamwork, and ultimately, a space where great ideas take off. We believe that the University of Cincinnati has everything it takes to be a breeding ground for innovation—and UCConnect is here to make sure no talent goes unnoticed and no idea goes unsupported.
+                <br><br>Let’s build the future. Together.
+                <br><br>Link for my socials:<br>
+            </p>
+
+            <div class="links">
+                <a href="https://www.linkedin.com/in/bipran/">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+
+                <a href="mailto:bipran.workspace@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Gmail: bipran.workspace@gmail.com</span>
+                </a>  
+
+
+                <a href="https://github.com/rimalbn">
+                    <i class="fa-solid fa-code-compare"></i>
+                    <span>Github</span>
+                </a>
+            </div>
+        </div>
+
+            <div class="headshot">
+                <img src="/Photos/BipranNewPhoto.webp">
+            </div>
+
+    </section>
+
+
+
+
+
+
+
+
+        <script>
+        // Grab the saved username
+        const username = localStorage.getItem("loggedInUser");
+
+        // Find the element that says "Guest"
+        const userDisplay = document.getElementById("userDisplay");
+
+        // Replace it with the actual username
+        if (username && userDisplay) {
+        userDisplay.textContent = username;
+        }
+    </script>
+
+        </main>
+    </body>
+</html>
